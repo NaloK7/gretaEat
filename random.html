@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Envie d'une nouvelle recettes</title>
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="random.html">GretaEat</a>
+        <nav>
+            <!-- <a href="meal.html">Plats</a> -->
+            <a href="categories.html">Categories</a>
+            <a href="categorie.html">Plat par categorie</a>
+            <a href="first-letter.html">Les plats qui commence par ...</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- permet d'afficher un plat au hasard -->
+        <section id="random-meal">
+            <h1>Découvrir une recettes</h1>
+            <article>
+                <a id="mealLink" href="meal.html?id=">
+                    <img id="rdm-meal-thumbs" src="" alt="">
+                </a>
+                <h2 id="rdm-meal-name"></h2>
+                <p id="rdm-meal-ctg-from"></p>
+
+            </article>
+        </section>
+    </main>
+
+</body>
+
+<script src="js/script_meal.js"></script>
+<script src="js/script_rdm.js"></script>
+
+</html>
