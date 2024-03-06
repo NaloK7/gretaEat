@@ -17,9 +17,13 @@ header a {
     color: black;
 }
 
+#logoimg {
+    width: 135px;
+    height: auto;
+}
 
-#logo {
-    font-size: 3em;
+#logotxt {
+    font-size: 2em;
     font-weight: 600;
 
 }

@@ -6,13 +6,12 @@
 async function fullRecipe() {
 
     let url = document.location
-    console.log(url);
+   
     let search = url.search
-    console.log(search);
+
     let param = new URLSearchParams(search);
     let id = parseInt(param.get("id"))
-    console.log(id)
-    // let id = 52772
+
     // get meal recipe
     let gmr = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
     gmr = await gmr.json()
@@ -35,6 +34,8 @@ async function fullRecipe() {
     let country = gmr.meals[0].strArea
     document.querySelector('#country').innerHTML = country
 
+    console.log(gmr.meals)
+    
     // ingredients + quantity    
     let ingredientsName = []
     let ingredientsQuantity = []
