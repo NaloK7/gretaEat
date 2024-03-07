@@ -16,16 +16,21 @@ header a {
     text-decoration: none;
     color: black;
 }
-
+#logo {
+    /* display: flex;
+    flex-direction: row;
+    align-items: end; */
+}
 #logoimg {
-    width: 135px;
+    width: 200px;
     height: auto;
+    margin: 0;
 }
 
 #logotxt {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
-
+    text-align: center;
 }
 
 nav {
@@ -69,8 +74,17 @@ article {
     justify-content: space-evenly;
 }
 
+#all-meal-info {
+    flex-direction: row;
+}
+#all-meal-info img {
+    width: 500px;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
 img {
-    height: 350px;
+    width: 350px;
     border-radius: 20px;
     margin: 15px 0;
 }

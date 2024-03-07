@@ -39,16 +39,20 @@ async function fullRecipe() {
     // ingredients + quantity    
     let ingredientsName = []
     let ingredientsQuantity = []
+    let ingredientsAndQuantity = {}
 
     for (const [key, value] of Object.entries(gmr.meals[0])) {
         if (value != "" && value != " " && value != null) {
             if (key.includes(`Ingredient`)) {
                 ingredientsName.push(value)
             } else if (key.includes(`Measure`)) {
-                ingredientsQuantity.push(value)
+                ingredientsQuantity.push(value)                
             }
         }
     }
+    // alert(gmr.meals[0].strIngredient)
+
+    
     // display ingredients + quantity
     let displayIng = document.querySelector('#ingredients')
 
