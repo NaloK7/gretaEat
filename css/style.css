@@ -1,5 +1,5 @@
 * {
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     font: "Roboto", sans-serif;
 }
@@ -16,11 +16,13 @@ header a {
     text-decoration: none;
     color: black;
 }
+
 #logo {
     /* display: flex;
     flex-direction: row;
     align-items: end; */
 }
+
 #logoimg {
     width: 200px;
     height: auto;
@@ -56,6 +58,7 @@ main {
     align-items: center;
     margin: 0 80px;
 }
+
 section {
     width: auto;
     padding: 30px;
@@ -76,7 +79,9 @@ article {
 
 #all-meal-info {
     flex-direction: row;
+    align-items: start;
 }
+
 #all-meal-info img {
     width: 500px;
     border-radius: 20px;
@@ -89,6 +94,24 @@ img {
     margin: 15px 0;
 }
 
-article p{
+article p {
     margin-top: 15px;
+}
+
+#info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#ingredients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+#recipe {
+    margin: 20px 0 0 20px;
 }

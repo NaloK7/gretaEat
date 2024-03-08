@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=*, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- tbd: ajouter nom du plat -->
     <title>Recette: </title>
 </head>
+
 <body>
     <header>
-        
+
         <a id="logotxt" href="random.html"><img id="logoimg" src="img/logo.png" alt="logo greta eat">GretaEat</a>
         <nav>
-            <!-- <a href="meal.html">Plats</a> -->
+
             <a href="categories.html">Categories</a>
             <a href="categorie.html">Plat par categorie</a>
             <a href="first-letter.html">Les plats qui commence par ...</a>
         </nav>
     </header>
     <main>
-        <!-- affiche toutes les infos sur un plat -->
-        <!-- tbd changer la disposition pour differencier plus par rapport a la page random -->
+        <!-- display all the information about a specific meal -->
         <section id="this-meal">
-            <!-- nom du plat -->
+            <!-- meal's name -->
             <h1 id="this-name"></h1>
+            <!-- meal's categorie -->
             <p id="categorie"></p>
+            <!-- meal's origin country -->
             <p id="country"></p>
             <article id="all-meal-info">
-                <!-- miniature du plat -->
+                <!-- meal's thumbnail -->
                 <img id="this-thumbs" src="" alt="">
-                <div id="ingredients">
+                <div id="info-container">
+                    <div id="ingredients">
 
+                    </div>
+                    <div id="recipe">
+
+                    </div>
                 </div>
-
             </article>
         </section>
     </main>
 
 </body>
 <script src="js/script_meal.js"></script>
+
 </html>
