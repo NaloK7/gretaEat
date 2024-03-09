@@ -1,3 +1,5 @@
+//OPTIMIZE why i get error "Uncaught (in promise) TypeError: gmr.meals is null"
+
 let idRdmMeal
 
 async function getRandomMeal() {
@@ -34,7 +36,8 @@ async function getRandomMeal() {
     // construction url avec id en paramètre
     let mealLink = document.querySelector('#mealLink')
     mealLink.href += idRdmMeal
-    mealLink.addEventListener('click', function() {fullRecipe()})
+    // mealLink.addEventListener('click', function() {fullRecipe()})
+    // mealLink.addEventListener('click', fullRecipe)
     
 
 }

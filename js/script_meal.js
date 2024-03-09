@@ -1,12 +1,20 @@
 
+// get id parameter to fetch specific url
+let url = document.location;
+let search = url.search;
+
+let param = new URLSearchParams(search);
+let id = parseInt(param.get("id"));
+
+
 async function fullRecipe() {
-  console.log('vu');
+  
   // get meal recipe
   let gmr = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
   );
   gmr = await gmr.json();
-
+  
   // nom
   let name = gmr.meals[0].strMeal;
   document.querySelector("#this-name").innerHTML = name;
@@ -64,14 +72,6 @@ async function fullRecipe() {
 
 }
 
-let url = document.location;
-
-let search = url.search;
-
-let param = new URLSearchParams(search);
-let id = parseInt(param.get("id"));
-
-if (id != null) {
-  fullRecipe();
+if (id != NaN || id != null) {
+  fullRecipe()
 }
-
