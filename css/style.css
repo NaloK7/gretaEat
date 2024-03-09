@@ -124,13 +124,13 @@ article p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    
+
 }
 
 .categories-article {
     background-color: #ffffff;
     margin-bottom: auto;
-    padding:10px;
+    padding: 10px;
     border-radius: 20px;
 
 }

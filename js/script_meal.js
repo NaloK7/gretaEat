@@ -1,4 +1,3 @@
-
 // get id parameter to fetch specific url
 let url = document.location;
 let search = url.search;
@@ -6,15 +5,13 @@ let search = url.search;
 let param = new URLSearchParams(search);
 let id = parseInt(param.get("id"));
 
-
 async function fullRecipe() {
-  
   // get meal recipe
   let gmr = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
   );
   gmr = await gmr.json();
-  
+
   // nom
   let name = gmr.meals[0].strMeal;
   document.querySelector("#this-name").innerHTML = name;
@@ -32,7 +29,6 @@ async function fullRecipe() {
   // origine
   let country = gmr.meals[0].strArea;
   document.querySelector("#country").innerHTML = country;
-
 
   // ingredients + quantity
   let ingredientsName = [];
@@ -60,18 +56,16 @@ async function fullRecipe() {
     displayIng.innerHTML += `<p>${ingredientsName[i]}: ${ingredientsQuantity[i]}</p>`;
   }
 
-
   // instructions
   // todo: maybe find a pattern in recipe to split them in multiple line
   let recipe = gmr.meals[0].strInstructions;
-  document.querySelector('#recipe').innerHTML += `<p>${recipe}</p>`
+  document.querySelector("#recipe").innerHTML += `<p>${recipe}</p>`;
   // let steps = recipe.split("STEP ")
   // for (let i = 1; i < steps.length; i++) {
   //   document.querySelector('#recipe').innerHTML += `<p>STEP ${steps[i]}</p>`
   // }
-
 }
 
 if (id != NaN || id != null) {
-  fullRecipe()
+  fullRecipe();
 }

@@ -1,49 +1,46 @@
 //OPTIMIZE why i get error "Uncaught (in promise) TypeError: gmr.meals is null"
 
-let idRdmMeal
+let idRdmMeal;
 
 async function getRandomMeal() {
-    // random meal request
-    let rmr = await fetch("https://www.themealdb.com/api/json/v1/1/random.php")
-    rmr = await rmr.json()
+  // random meal request
+  let rmr = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
+  rmr = await rmr.json();
 
-    // miniature du plat
-    let mealThumbs = rmr.meals[0].strMealThumb
+  // miniature du plat
+  let mealThumbs = rmr.meals[0].strMealThumb;
 
-    // nom du plat
-    let mealName = rmr.meals[0].strMeal
+  // nom du plat
+  let mealName = rmr.meals[0].strMeal;
 
-    // affichage de l'image    
-    let setMealThumbs = document.querySelector('#rdm-meal-thumbs')
-    setMealThumbs.src = mealThumbs
-    setMealThumbs.alt = mealName
+  // affichage de l'image
+  let setMealThumbs = document.querySelector("#rdm-meal-thumbs");
+  setMealThumbs.src = mealThumbs;
+  setMealThumbs.alt = mealName;
 
-    // affichage du nom
-    let setMealName = document.querySelector('#rdm-meal-name')
-    setMealName.innerHTML = mealName
+  // affichage du nom
+  let setMealName = document.querySelector("#rdm-meal-name");
+  setMealName.innerHTML = mealName;
 
-    // pays du plat
-    let mealOrigin = rmr.meals[0].strArea
-    // categorie du plat
-    let mealCategorie = rmr.meals[0].strCategory
+  // pays du plat
+  let mealOrigin = rmr.meals[0].strArea;
+  // categorie du plat
+  let mealCategorie = rmr.meals[0].strCategory;
 
-    // affichage pays et categorie
-    let setMealCountry = document.querySelector("#rdm-meal-ctg-from")
-    setMealCountry.innerHTML = `${mealOrigin}'s ${mealCategorie}`
+  // affichage pays et categorie
+  let setMealCountry = document.querySelector("#rdm-meal-ctg-from");
+  setMealCountry.innerHTML = `${mealOrigin}'s ${mealCategorie}`;
 
-    // id du plat
-    idRdmMeal = rmr.meals[0].idMeal
-    // construction url avec id en paramètre
-    let mealLink = document.querySelector('#mealLink')
-    mealLink.href += idRdmMeal
-    // mealLink.addEventListener('click', function() {fullRecipe()})
-    // mealLink.addEventListener('click', fullRecipe)
-    
-
+  // id du plat
+  idRdmMeal = rmr.meals[0].idMeal;
+  // construction url avec id en paramètre
+  let mealLink = document.querySelector("#mealLink");
+  mealLink.href += idRdmMeal;
+  // mealLink.addEventListener('click', function() {fullRecipe()})
+  // mealLink.addEventListener('click', fullRecipe)
 }
 try {
-    getRandomMeal()
+  getRandomMeal();
 } catch (error) {
-    alert('une erreur c\'est produite')
+  alert("une erreur c'est produite");
 }
-
