@@ -26,13 +26,15 @@ async function getRandomMeal() {
     let mealCategorie = rmr.meals[0].strCategory
 
     // affichage pays et categorie
-    let setMealContry = document.querySelector("#rdm-meal-ctg-from")
-    setMealContry.innerHTML = `${mealOrigin}'s ${mealCategorie}`
+    let setMealCountry = document.querySelector("#rdm-meal-ctg-from")
+    setMealCountry.innerHTML = `${mealOrigin}'s ${mealCategorie}`
 
     // id du plat
     idRdmMeal = rmr.meals[0].idMeal
-    // construction url avec id en parametre
-    document.querySelector('#mealLink').href += idRdmMeal
+    // construction url avec id en paramètre
+    let mealLink = document.querySelector('#mealLink')
+    mealLink.href += idRdmMeal
+    mealLink.addEventListener('click', function() {fullRecipe()})
     
 
 }
@@ -41,3 +43,4 @@ try {
 } catch (error) {
     alert('une erreur c\'est produite')
 }
+

@@ -1,15 +1,6 @@
-// fonction click sur img → ouvre page meal.html avec les info du plat
-// recupere l'id d'un plat
-// requete url avec id pour recup info
 
 async function fullRecipe() {
-  let url = document.location;
-
-  let search = url.search;
-
-  let param = new URLSearchParams(search);
-  let id = parseInt(param.get("id"));
-
+  console.log('vu');
   // get meal recipe
   let gmr = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
@@ -73,4 +64,14 @@ async function fullRecipe() {
 
 }
 
-fullRecipe();
+let url = document.location;
+
+let search = url.search;
+
+let param = new URLSearchParams(search);
+let id = parseInt(param.get("id"));
+
+if (id != null) {
+  fullRecipe();
+}
+
