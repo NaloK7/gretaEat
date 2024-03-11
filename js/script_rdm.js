@@ -1,4 +1,4 @@
-//OPTIMIZE why i get error "Uncaught (in promise) TypeError: gmr.meals is null"
+
 
 let idRdmMeal;
 
@@ -7,37 +7,36 @@ async function getRandomMeal() {
   let rmr = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
   rmr = await rmr.json();
 
-  // miniature du plat
+  // meal thumbnail
   let mealThumbs = rmr.meals[0].strMealThumb;
 
-  // nom du plat
+  // meal name
   let mealName = rmr.meals[0].strMeal;
 
-  // affichage de l'image
+  // display thumbnail
   let setMealThumbs = document.querySelector("#rdm-meal-thumbs");
   setMealThumbs.src = mealThumbs;
   setMealThumbs.alt = mealName;
 
-  // affichage du nom
+  // display name
   let setMealName = document.querySelector("#rdm-meal-name");
   setMealName.innerHTML = mealName;
 
-  // pays du plat
+  // meal origin
   let mealOrigin = rmr.meals[0].strArea;
-  // categorie du plat
+  // meal categorie
   let mealCategorie = rmr.meals[0].strCategory;
 
-  // affichage pays et categorie
+  // display origin and categorie
   let setMealCountry = document.querySelector("#rdm-meal-ctg-from");
   setMealCountry.innerHTML = `${mealOrigin}'s ${mealCategorie}`;
 
-  // id du plat
+  // meal id
   idRdmMeal = rmr.meals[0].idMeal;
-  // construction url avec id en paramètre
+  // create link with meal id
   let mealLink = document.querySelector("#mealLink");
   mealLink.href += idRdmMeal;
-  // mealLink.addEventListener('click', function() {fullRecipe()})
-  // mealLink.addEventListener('click', fullRecipe)
+
 }
 try {
   getRandomMeal();

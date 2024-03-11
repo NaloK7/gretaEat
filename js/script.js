@@ -1,3 +1,5 @@
+
+
 // todo get current location
 // switch location to specific function
 // const pathMap = {
