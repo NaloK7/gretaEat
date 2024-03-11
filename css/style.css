@@ -67,9 +67,14 @@ section {
     align-items: center;
     background-color: #e0e0e0;
     border-radius: 20px;
+    
+}
+#this-meal p {
+    width: auto;
+}
+#random-meal {
     box-shadow: 2px 2px 10px 0px #dad9d9;
 }
-
 article {
     display: flex;
     flex-direction: column;
@@ -77,7 +82,12 @@ article {
     justify-content: space-evenly;
 }
 
+#this-meal {
+    width: 100vw;
+    padding: 30px;
+}
 #all-meal-info {
+    width: 100%;
     flex-direction: row;
     align-items: start;
 }
@@ -136,7 +146,7 @@ article p {
 }
 
 .categories-article:hover {
-    /* merci loîc ^^ */
+    /* merci Loîc P */
     transform: translateY(-10px);
 
 }
@@ -144,4 +154,27 @@ article p {
 .categories-article img {
     width: 200px;
     height: auto;
+    margin: 20px;
+}
+
+#categorie {
+    border-radius: 0;
+    width: 100vw;
+}
+
+.categorie-container {
+    padding: 30px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.categorie-container h2 {
+    display: ruby;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

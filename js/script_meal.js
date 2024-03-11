@@ -3,7 +3,6 @@
 // get id parameter to fetch specific url
 let url = document.location;
 let search = url.search;
-
 let param = new URLSearchParams(search);
 let id = parseInt(param.get("id"));
 

@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>GretaEat Tous les plats de cette categorie</title>
 </head>
 <body>
-    
+    <header>
+
+        <a id="logotxt" href="random.html"><img id="logoimg" src="img/logo.png" alt="logo greta eat">GretaEat</a>
+        <nav>
+            <a href="categories.html">Categories</a>
+            <a href="categorie.html">Plat par categorie</a>
+            <a href="first-letter.html">Les plats qui commence par ...</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- permet d'afficher un plat au hasard -->
+        <section id="categorie">
+            <h1>Toutes les plats</h1>
+            <div class="categorie-container">
+            </div>
+        </section>
+    </main>
 </body>
+<script src="js/categorie.js"></script>
 </html>
