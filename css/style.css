@@ -27,8 +27,18 @@ header a {
     width: 200px;
     height: auto;
     margin: 0;
+    animation: rotating 2s linear infinite
 }
-
+/* TODO remove */
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
 #logotxt {
     font-size: 1.5em;
     font-weight: 600;
