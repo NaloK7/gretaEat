@@ -8,6 +8,8 @@
     font-family: "Roboto", sans-serif;
 }
 
+
+/* HEADER */
 header {
     margin: 20px;
     display: flex;
@@ -61,7 +63,7 @@ header a {
 
 #logotxt {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     /* animation: gif 5s linear infinite;
     background-image: url(/img/logo1.png);
@@ -84,11 +86,14 @@ nav {
 
 nav a {
     font-size: 1.5em;
+    font-weight: 500;
 }
 
 nav a:hover {
     color: chocolate;
 }
+
+/* SECTION */
 
 main {
     display: flex;
@@ -105,15 +110,7 @@ section {
     align-items: center;
     background-color: #e0e0e0;
     border-radius: 20px;
-
-}
-
-#this-meal p {
-    width: auto;
-}
-
-#random-meal {
-    box-shadow: 2px 2px 10px 0px #dad9d9;
+    
 }
 
 article {
@@ -121,23 +118,6 @@ article {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-}
-
-#this-meal {
-    width: 100vw;
-    padding: 30px;
-}
-
-#all-meal-info {
-    width: 100%;
-    flex-direction: row;
-    align-items: start;
-}
-
-#all-meal-info img {
-    width: 500px;
-    border-radius: 20px;
-    margin: 15px 0;
 }
 
 img {
@@ -150,12 +130,45 @@ article p {
     margin-top: 15px;
 }
 
+/* RANDOM */
+#random-meal {
+    box-shadow: 2px 2px 10px 0px #dad9d9;
+}
+
+/* MEAL */
+#this-meal p {
+    width: auto;
+}
+
+/* MEAL -  */
+#this-meal {
+    width: 100vw;
+    padding: 30px;
+}
+
+/* MEAL -  */
+#all-meal-info {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+}
+
+/* MEAL -  */
+#all-meal-info img {
+    width: 500px;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+
+/* MEAL -  */
 #info-container {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
+/* MEAL -  */
 #ingredients {
     display: flex;
     flex-direction: row;
@@ -164,10 +177,18 @@ article p {
     margin-left: 20px;
 }
 
+/* MEAL -  */
 #recipe {
     margin: 20px 0 0 20px;
 }
 
+/* MEAL -  */
+#categorie {
+    border-radius: 0;
+    width: 100vw;
+}
+
+/* CATEGORIES -  */
 .categories-container {
     margin-top: 30px;
     width: 100vw;
@@ -179,6 +200,7 @@ article p {
 
 }
 
+/* CATEGORIES -  */
 .categories-article {
     background-color: #ffffff;
     margin-bottom: auto;
@@ -187,23 +209,21 @@ article p {
 
 }
 
+/* CATEGORIES -  */
 .categories-article:hover {
     /* merci Loîc P */
     transform: translateY(-10px);
 
 }
 
+/* CATEGORIES -  */
 .categories-article img {
     width: 200px;
     height: auto;
     margin: 20px;
 }
 
-#categorie {
-    border-radius: 0;
-    width: 100vw;
-}
-
+/* CATEGORIE -  */
 .categorie-container {
     padding: 30px;
     width: 100vw;
@@ -214,6 +234,8 @@ article p {
     row-gap: 30px;
 }
 
+/* CATEGORIE -  */
+
 .categorie-container h2 {
     display: ruby;
     width: 200px;
@@ -222,8 +244,6 @@ article p {
 }
 
 /* FIRST LETTER */
-
-/* alphabet */
 .alphabet {
     width: 40vw;
     display: flex;
@@ -232,17 +252,20 @@ article p {
     align-items: end;
 }
 
+/* FIRST LETTER */
 .alphabet a {
     font-size: 1.5em;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
+/* FIRST LETTER */
 .alphabet div {
     font-size: 1.5em;
     color: #783b06;
 }
 
+/* FIRST LETTER */
 .alphabet a:hover {
     color: #783b06;
     transform: translateY(-3px);
