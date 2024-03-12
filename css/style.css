@@ -253,7 +253,7 @@ article p {
 }
 
 /* FIRST LETTER */
-.alphabet a {
+.alphabet p {
     font-size: 1.5em;
     text-decoration: none;
     font-weight: bold;
@@ -266,7 +266,8 @@ article p {
 }
 
 /* FIRST LETTER */
-.alphabet a:hover {
+.alphabet p:hover {
+    cursor: pointer;
     color: #783b06;
     transform: translateY(-3px);
 }

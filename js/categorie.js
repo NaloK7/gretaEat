@@ -8,11 +8,11 @@ async function mealsByCtg() {
   let gamr = await fetch(
     `https://www.themealdb.com/api/json/v1/1/filter.php?c=${c}`
   );
-  let gamrj = await gamr.json();
+  gamr = await gamr.json();
 
   // parse all meal to display them in an article
-  for (let i = 0; i < gamrj.meals.length; i++) {
-    const element = gamrj.meals[i];
+  for (let i = 0; i < gamr.meals.length; i++) {
+    const element = gamr.meals[i];
     //   get thumbnail
     let src = element.strMealThumb;
     // get name
