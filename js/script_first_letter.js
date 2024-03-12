@@ -9,7 +9,9 @@ for (let i = 0; i < 26; i++) {
 }
 
 async function mealByLetter(letter) {
-    document.querySelector("#categorie").innerHTML = ""
+
+  // reset display
+  document.querySelector("#categorie").innerHTML = "";
   // get meal by letter
   let gmbl = await fetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`
@@ -20,7 +22,7 @@ async function mealByLetter(letter) {
   // parse all meal to display them in an article
   for (let i = 0; i < gmbl.meals.length; i++) {
     const element = gmbl.meals[i];
-    //   get thumbnail
+    // get thumbnail
     let src = element.strMealThumb;
     // get name
     let name = element.strMeal;
@@ -35,21 +37,15 @@ async function mealByLetter(letter) {
           </a>
           <h2>${name}</h2>
       </article>`;
-    }
-    test()
+  }
 }
 
-function test() {
-  // select all letter in <p>
-  let aLink = document.querySelectorAll(".alphabet p");
-  // for each add click event to execute a fetch with the proper letter
-  aLink.forEach((element) => {
-    let letter = element.innerText.toLowerCase();
-    element.addEventListener("click", function () {
-      mealByLetter(letter);
-    });
+// select all letter in <p>
+let aLink = document.querySelectorAll(".alphabet p");
+// for each add click event to execute a fetch with the proper letter
+aLink.forEach((element) => {
+  let letter = element.innerText.toLowerCase();
+  element.addEventListener("click", function () {
+    mealByLetter(letter);
   });
-
-}
-
-test();
+});

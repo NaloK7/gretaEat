@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Envie d'une nouvelle recettes</title>
+    <title>Les plats de A à Z</title>
 </head>
-
 <body>
     <header>
         <a id="logo" href="random.html"><img id="logoimg" src="img/logo.png" alt="logo greta eat">
@@ -20,23 +17,21 @@
             <a href="search.html">Rechercher</a>
         </nav>
     </header>
-    
     <main>
-        <!-- display a random meal card -->
-        <section id="random-meal">
-            <h1>Découvrir une recettes</h1>
-            <article>
-                <a id="mealLink" href="meal.html?id=">
-                    <img id="rdm-meal-thumbs" src="" alt="">
-                </a>
-                <h2 id="rdm-meal-name"></h2>
-                <p id="rdm-meal-ctg-from"></p>
+        <div>
+            <input type="text" name="search-meal" id="search-meal-input" placeholder="nom d'un plat">
+            <button>Rechercher</button>
+        </div>
+        <section id="categorie">
 
-            </article>
         </section>
     </main>
-
 </body>
-<script src="js/script_rdm.js"></script>
-
+<script src="js/script_search.js"></script>
 </html>
+<!-- Créer une page search.html contenant un champ de recherche permettant de récupérer les
+plats par nom. Les résultats seront présentés sous forme de vignette, sous le champ de
+saisie. Un message devra alerter l’utilisateur en cas de résultats vides. 
+
+www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+-->

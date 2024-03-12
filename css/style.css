@@ -102,6 +102,11 @@ main {
     margin: 0 80px;
 }
 
+/* div in A-Z and search */
+main>div {
+    margin-bottom: 20px;
+}
+
 section {
     width: auto;
     padding: 30px;
@@ -250,6 +255,7 @@ article p {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
+
 }
 
 /* FIRST LETTER */
