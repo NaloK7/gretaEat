@@ -277,3 +277,49 @@ article p {
     color: #783b06;
     transform: translateY(-3px);
 }
+
+
+/* SEARCH */
+
+#search-bar {
+    width: 20vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#search-meal-input {
+    width: 60%;
+    /* border-radius: 5px 0px 0px 5px; */
+    /* border-top: 2px solid #6e6e6e;
+    border-left: 2px solid #6e6e6e;
+    border-bottom: 2px solid #6e6e6e;
+    border-right: none; */
+    border-bottom: 2px solid #6e6e6e;
+
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: medium;
+    
+}
+
+#btnSearch {
+    border-radius: 5px 0px 0px 5px;
+    
+    border: 2px solid #6e6e6e;
+    /* border-top: 2px solid #6e6e6e;
+    border-right: 2px solid #6e6e6e;
+    border-bottom: 2px solid #6e6e6e;
+    border-left: none; */
+    color:#494949;
+    font-size: medium;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+#btnSearch:hover {
+    background-color: #783b06;
+    color: #dad9d9;
+
+}
