@@ -22,7 +22,7 @@ async function mealsByCtg() {
     // display
     document.querySelector(
       ".categorie-container"
-    ).innerHTML += `<article class="categories-article">
+    ).innerHTML += `<article class="categories-article hover-translate">
           <a href="meal.html?id=${id}">
               <img src="${src}" alt="${name}">
           </a>

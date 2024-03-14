@@ -15,7 +15,6 @@ header {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-
 }
 
 .sep-line {
@@ -34,56 +33,27 @@ header a {
     width: 150px;
     height: auto;
     margin: 0;
-    /* visibility: none; */
-    /* animation: gif 10s linear infinite */
 }
-
-/* TODO remove */
-/* change source of img 5x */
-/* @keyframes gif {
-    0% {
-        background-image: url(/img/logo2.png);
+/* animation: slidein 0.2s ease-in ; */
+@keyframes slidein {
+    from {
+      transform: scale(120%, 120%);
     }
-
-    20% {
-        background-image: url(/img/logo2.png);
+  
+    to {
+      transform: scale(100%, 100%);
     }
-
-    40% {
-        background-image: url(/img/logo3.png);
-    }
-
-    60% {
-        background-image: url(/img/logo3.png);
-    }
-
-    80% {
-        background-image: url(/img/logo5.png);
-    }
-
-    100% {
-        background-image: url(/img/logo2.png);
-    }
-
-} */
-
+  }
+  
 
 #logotxt {
     font-size: 1.5em;
     font-weight: 500;
     text-align: center;
-    /* animation: gif 5s linear infinite;
-    background-image: url(/img/logo2.png);
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: contain; */
-
 }
 
 nav {
-    margin: 30px;
+    margin: 20px;
     padding: 0px 20px;
     width: 100vw;
     display: flex;
@@ -106,11 +76,18 @@ nav a:hover {
     border: 1px solid #ad581b;
     border-radius: 10px;
 }
+
+.hover-translate:hover {
+    /* merci Loîc P */
+    transition-duration: 0.2s;
+    transform: translateY(-10px);
+}
 /* INDEX */
 main #credits {
     color: #777777;
     font-size: 1.2em;
 }
+
 #credits>a {
     text-decoration: none;
     color: #ad581b;
@@ -139,7 +116,6 @@ section {
     align-items: center;
     background-color: #e0e0e0;
     border-radius: 20px;
-
 }
 
 article {
@@ -173,7 +149,6 @@ article p {
     width: 25vw;
     height: 415px;
     object-fit: cover;
-
 }
 
 #index-section-container {
@@ -259,7 +234,6 @@ article p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-
 }
 
 /* CATEGORIES -  */
@@ -268,15 +242,14 @@ article p {
     margin-bottom: auto;
     padding: 10px;
     border-radius: 20px;
-
+    transition-duration: 0.2s;
 }
 
 /* CATEGORIES -  */
-.categories-article:hover {
-    /* merci Loîc P */
+/* .categories-article:hover {
+    transition-duration: 0.2s;
     transform: translateY(-10px);
-
-}
+} */
 
 /* CATEGORIES -  */
 .categories-article img {
@@ -297,7 +270,6 @@ article p {
 }
 
 /* CATEGORIE -  */
-
 .categorie-container h2 {
     display: ruby;
     width: 200px;
@@ -312,7 +284,6 @@ article p {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-
 }
 
 /* FIRST LETTER */
@@ -321,6 +292,7 @@ article p {
     text-decoration: none;
     font-weight: bold;
     color: black;
+    transition-duration: 0.2s;
 }
 
 /* FIRST LETTER */
@@ -333,7 +305,6 @@ article p {
 .alphabet p:hover {
     cursor: pointer;
     color: #783b06;
-    transform: translateY(-3px);
 }
 
 
@@ -348,28 +319,16 @@ article p {
 
 #search-meal-input {
     width: 60%;
-    /* border-radius: 5px 0px 0px 5px; */
-    /* border-top: 2px solid #6e6e6e;
-    border-left: 2px solid #6e6e6e;
     border-bottom: 2px solid #6e6e6e;
-    border-right: none; */
-    border-bottom: 2px solid #6e6e6e;
-
     border-left: none;
     border-top: none;
     border-right: none;
     font-size: medium;
-
 }
 
 #btnSearch {
     border-radius: 5px 0px 0px 5px;
-
     border: 2px solid #6e6e6e;
-    /* border-top: 2px solid #6e6e6e;
-    border-right: 2px solid #6e6e6e;
-    border-bottom: 2px solid #6e6e6e;
-    border-left: none; */
     color: #494949;
     font-size: medium;
     font-weight: 600;

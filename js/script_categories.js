@@ -14,7 +14,7 @@ async function getAllCategorie() {
     // display
     document.querySelector(
       ".categories-container"
-    ).innerHTML += `<article class="categories-article">
+    ).innerHTML += `<article class="categories-article hover-translate">
         <a href="categorie.html?c=${name}">
   
             <img src="${src}" alt="${name}">

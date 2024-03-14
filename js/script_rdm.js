@@ -12,7 +12,6 @@ async function getRandomMeal() {
 
   // meal name
   let mealName = rmr.meals[0].strMeal;
-
   // display thumbnail
   let setMealThumbs = document.querySelector("#rdm-meal-thumbs");
   setMealThumbs.src = mealThumbs;

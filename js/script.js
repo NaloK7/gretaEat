@@ -12,11 +12,9 @@ function incrementCounter() {
     let counter = localStorage.getItem('counter');
     counter = counter ? parseInt(counter) + 1 : 1;
     localStorage.setItem('counter', counter);
-    console.log("🚀 ~ incrementCounter ~ counter:", counter)
     let logo = document.querySelector('#logo')
     logo.innerHTML = `<img id="logoimg" src="img/logo${(counter%(logoPaths.length-1))+1}.png" alt="logo greta eat">
     <h1 id="logotxt">GretaEat</h1>`
-    console.log("🚀 ~ logo.innerHTML:", logo.innerHTML)
     return counter;
 }
 
