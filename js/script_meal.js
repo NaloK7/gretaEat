@@ -25,11 +25,12 @@ async function fullRecipe() {
 
   // meal type
   let category = gmr.meals[0].strCategory;
-  document.querySelector("#categorie").innerHTML = category;
+  document.querySelector("#meal-categorie").innerHTML += `<a href="categorie.html?c=${category}">${category}</a>`;
 
   // meal origin
   let country = gmr.meals[0].strArea;
-  document.querySelector("#country").innerHTML = country;
+  // todo add <a href=""></a> to go to country page
+  document.querySelector("#meal-country").innerHTML += country;
 
   // ingredients + quantity
   let ingredientsName = [];
@@ -54,7 +55,8 @@ async function fullRecipe() {
   let displayIng = document.querySelector("#ingredients");
   // display association of: name and quantity
   for (let i = 0; i < ingredientsName.length; i++) {
-    displayIng.innerHTML += `<p>${ingredientsName[i]}: ${ingredientsQuantity[i]}</p>`;
+
+    displayIng.innerHTML += `<p><b>${ingredientsName[i]}:</b> ${ingredientsQuantity[i]}</p>`;
   }
 
   // display recipe instructions
