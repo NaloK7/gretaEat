@@ -4,7 +4,7 @@ document.querySelector(
 <a id="logo" href="index.html"><img id="logoimg" src="img/logo2.png" alt="logo greta eat">
 <h1 id="logotxt">GretaEat</h1>
 </a>
-<nav>
+<nav class="flex_row">
 <a href="random.html"><i class="fas fa-random"></i></a>
 <a id="all-cat-btn" href="categories.html">Categories</a>
 <a href="first-letter.html">A - Z</a>

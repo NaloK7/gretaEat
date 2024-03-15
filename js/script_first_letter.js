@@ -22,11 +22,11 @@ async function mealByLetter(letter) {
   if (gmbl.meals == null) {
     // display "aucun résultat"
     document.querySelector("#categorie").innerHTML +=
-    '<h1>Aucun résultat trouvé</h1><div class="categorie-container"></div>';
+    '<h1>Aucun résultat trouvé</h1><div class="categorie-container flex_row"></div>';
     
   } else {
     document.querySelector("#categorie").innerHTML +=
-    '<h1>Toutes les plats</h1><div class="categorie-container"></div>';
+    '<h1>Toutes les plats</h1><div class="categorie-container flex_row"></div>';
     // parse all meal to display them in an article
     for (let i = 0; i < gmbl.meals.length; i++) {
       const element = gmbl.meals[i];
