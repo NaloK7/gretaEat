@@ -55,7 +55,7 @@ async function fullRecipe() {
   // display association of: name and quantity
   for (let i = 0; i < ingredientsName.length; i++) {
 
-    displayIng.innerHTML += `<p><b>${ingredientsName[i]}:</b> ${ingredientsQuantity[i]}</p>`;
+    displayIng.innerHTML += `<p><b><a href="ingredient.html?i=${ingredientsName[i]}">${ingredientsName[i]}</a>:</b> ${ingredientsQuantity[i]}</p>`;
   }
 
   // display recipe instructions

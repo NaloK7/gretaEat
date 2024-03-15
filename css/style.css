@@ -7,6 +7,13 @@
     font-family: "Roboto", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color:black
+}
+a:hover {
+    text-decoration: underline;
+}
 .flex_row {
     display: flex;
     flex-direction: row;
@@ -357,6 +364,7 @@ padding: 10px 0 20px 20px;
 .alphabet p:hover {
     cursor: pointer;
     color: #783b06;
+    transform: translateY(-3px);
 }
 
 
