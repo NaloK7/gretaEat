@@ -15,7 +15,7 @@
 
 /* HEADER */
 header {
-    margin: 20px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +23,8 @@ header {
 }
 
 .sep-line {
+    width: 100%;
     margin-bottom: 32px;
-    ;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -35,30 +35,31 @@ header a {
 
 
 #logoimg {
-    width: 150px;
+    width: 100px;
     height: auto;
     margin: 0;
 }
+
 /* animation: slidein 0.2s ease-in ; */
 @keyframes slidein {
     from {
-      transform: scale(120%, 120%);
+        transform: scale(120%, 120%);
     }
-  
+
     to {
-      transform: scale(100%, 100%);
+        transform: scale(100%, 100%);
     }
-  }
-  
+}
+
 
 #logotxt {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 500;
     text-align: center;
 }
 
 nav {
-    margin: 20px;
+    margin: 10px;
     padding: 0px 20px;
     width: 100vw;
     justify-content: center;
@@ -85,6 +86,15 @@ nav a:hover {
     transition-duration: 0.2s;
     transform: translateY(-10px);
 }
+
+body {
+    height: 100vh;
+}
+
+main {
+    min-height: calc(100% - 303px);
+}
+
 /* INDEX */
 main #credits {
     color: #777777;
@@ -103,7 +113,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 80px;
+    /* margin: 0 80px; */
 }
 
 /* div in A-Z and search */
@@ -142,29 +152,37 @@ article p {
     gap: 30px;
 }
 
+
 #index-main-container section {
     padding: 20px;
     background-color: #eeeeee;
     width: 30vw;
+    height: fit-content;
 }
 
-#index-main-container img{
+#index-main-container img {
     width: 25vw;
-    height: 415px;
+    height: 45vh;
     object-fit: cover;
 }
 
 #index-section-container {
+    width: 100%;
+    padding: 30px;
     gap: 30px;
+    justify-content: space-between;
+    margin: 0;
 }
 
-#index-section-container p{
+#index-section-container p {
     background-color: #830b0b;
     color: white;
     padding: 15px;
     border-radius: 25px;
     font-size: large;
     font-weight: 400;
+    width: fit-content;
+    margin: auto;
 }
 
 
@@ -326,4 +344,23 @@ article p {
     background-color: #783b06;
     color: #dad9d9;
 
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    width: 8em;
 }

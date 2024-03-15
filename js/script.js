@@ -1,3 +1,5 @@
+
+// HEADER
 document.querySelector(
   "header"
 ).innerHTML = `
@@ -5,12 +7,14 @@ document.querySelector(
 <h1 id="logotxt">GretaEat</h1>
 </a>
 <nav class="flex_row">
-<a href="random.html"><i class="fas fa-random"></i></a>
 <a id="all-cat-btn" href="categories.html">Categories</a>
 <a href="first-letter.html">A - Z</a>
+<a href="random.html"><i class="fas fa-random"></i></a>
 <a href="search.html"><i class="fas fa-search"></i> Rechercher</a>
 </nav>`;
 
+
+// logo animation
 let logoPaths = [
   "img/logo1.png",
   "img/logo2.png",
@@ -34,3 +38,7 @@ function incrementCounter() {
 
 incrementCounter();
 
+// FOOTER
+let footer = document.querySelector('footer')
+footer.classList += "flex_row"
+footer.innerHTML = `<p>2024 GretaEat Made in France</p><a href="">About</a>`
