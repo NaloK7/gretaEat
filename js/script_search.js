@@ -34,7 +34,7 @@ async function getMealsBySearch() {
       section.innerHTML += `<h1>Quelque exemples:</h1><div class="categorie-container  flex_row"></div>`;
     } else {
         // normal case → display meals found
-      section.innerHTML += `<h1>${gmbs.meals.length} résultat(s) pour: "${inputTxt}"</h1><div class="categorie-container "></div>`;
+      section.innerHTML += `<h1>${gmbs.meals.length} résultat(s) pour: "${inputTxt}"</h1><div class="categorie-container flex_row"></div>`;
     }
     // parse all meal to display them in an article
     for (let i = 0; i < gmbs.meals.length; i++) {
@@ -48,7 +48,7 @@ async function getMealsBySearch() {
       // display
       document.querySelector(
         ".categorie-container"
-      ).innerHTML += `<article class="categories-article">
+      ).innerHTML += `<article class="categories-article hover-translate">
                 <a href="meal.html?id=${id}">
                     <img src="${src}" alt="${name}">
                 </a>

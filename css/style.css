@@ -150,31 +150,32 @@ article p {
 
 #index-main-container {
     gap: 30px;
+
 }
 
 
 #index-main-container section {
     padding: 20px;
     background-color: #eeeeee;
-    width: 30vw;
+    width: 45vw;
+
     height: fit-content;
 }
 
+#index-main-container a {
+    height: 100%;
+    width: 100%;
+}
+
 #index-main-container img {
-    width: 25vw;
-    height: 45vh;
+    
+    height: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
-#index-section-container {
-    width: 100%;
-    padding: 30px;
-    gap: 30px;
-    justify-content: space-between;
-    margin: 0;
-}
-
 #index-section-container p {
+    height: auto;
     background-color: #830b0b;
     color: white;
     padding: 15px;
@@ -184,6 +185,16 @@ article p {
     width: fit-content;
     margin: auto;
 }
+
+#index-section-container {
+    width: 100%;
+    padding: 30px;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
 
 
 /* RANDOM */
@@ -290,7 +301,7 @@ padding: 10px 0 20px 20px;
 .categories-article {
     background-color: #ffffff;
     margin-bottom: auto;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 20px;
     transition-duration: 0.2s;
 }
@@ -307,14 +318,15 @@ padding: 10px 0 20px 20px;
     padding: 30px;
     width: 100vw;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 30px;
+    justify-content: center;
+    gap: 30px;
 }
 
 /* CATEGORIE -  */
 .categorie-container h2 {
     display: ruby;
     width: 200px;
+    margin-bottom: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
