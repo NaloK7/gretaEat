@@ -380,6 +380,10 @@ padding: 10px 0 20px 20px;
     color: #dad9d9;
 
 }
+.country-name {
+    text-decoration: none;
+    color: black;
+}
 
 /* FOOTER */
 

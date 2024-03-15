@@ -29,8 +29,7 @@ async function fullRecipe() {
 
   // meal origin
   let country = gmr.meals[0].strArea;
-  // todo add <a href=""></a> to go to country page
-  document.querySelector("#meal-country").innerHTML += country;
+  document.querySelector("#meal-country").innerHTML += `<a href="area.html?a=${country}">${country}</a>`;
 
   // ingredients + quantity
   let ingredientsName = [];
