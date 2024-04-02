@@ -3,7 +3,7 @@
 document.querySelector(
   "header"
 ).innerHTML = `
-<a id="logo" href="index.html"><img id="logoimg" src="img/logo2.png" alt="logo greta eat">
+<a id="logo" href="index.html" class="flex_row"><img id="logoimg" src="img/logo2.png" alt="logo greta eat">
 <h1 id="logotxt">GretaEat</h1>
 </a>
 <nav class="flex_row">
@@ -28,11 +28,8 @@ function incrementCounter() {
   let counter = localStorage.getItem("counter");
   counter = counter ? parseInt(counter) + 1 : 1;
   localStorage.setItem("counter", counter);
-  let logo = document.querySelector("#logo");
-  logo.innerHTML = `<img id="logoimg" src="img/logo${
-    (counter % (logoPaths.length - 1)) + 1
-  }.png" alt="logo greta eat">
-    <h1 id="logotxt">GretaEat</h1>`;
+  let logo = document.querySelector("#logoimg");
+  logo.src = `img/logo${(counter % (logoPaths.length - 1)) + 1}.png`;
   return counter;
 }
 
@@ -41,4 +38,4 @@ incrementCounter();
 // FOOTER
 let footer = document.querySelector('footer')
 footer.classList += "flex_row"
-footer.innerHTML = `<p>2024 GretaEat Made in France</p><a href="">About</a>`
+footer.innerHTML = `<p>2024 GretaEat</p><p>Jolan FICHET</p>`

@@ -8,7 +8,6 @@ async function getAllAreas() {
     // parse all areas to display them in an article
     for (let i = 0; i < gaa.meals.length; i++) {
       const element = gaa.meals[i];
-      console.log("🚀 ~ getAllAreas ~ element:", element)
       // get thumbnail
       let src = element.strCategoryThumb;
       // get name
