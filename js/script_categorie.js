@@ -10,6 +10,7 @@ async function mealsByCtg() {
   );
   gamr = await gamr.json();
 
+  document.querySelector('#title').innerHTML = `Categorie: ${c}`
   // parse all meal to display them in an article
   for (let i = 0; i < gamr.meals.length; i++) {
     const element = gamr.meals[i];

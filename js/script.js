@@ -10,7 +10,7 @@ document.querySelector(
 <a id="all-cat-btn" href="categories.html">Categories</a>
 <a href="first-letter.html">A - Z</a>
 <a href="random.html"><i class="fas fa-random"></i></a>
-<a href="search.html"><i class="fas fa-search"></i> Rechercher</a>
+<a href="search.html"><i class="fas fa-search"></i> <span>Rechercher</span></a>
 </nav>`;
 
 

@@ -9,7 +9,7 @@
 
 a {
     text-decoration: none;
-    color:black
+    color: black
 }
 
 .flex_row {
@@ -37,7 +37,7 @@ header a {
     text-decoration: none;
     color: black;
     align-items: end;
-    gap:10px
+    gap: 10px
 }
 
 
@@ -163,7 +163,7 @@ article p {
 }
 
 #index-main-container img {
-    
+
     height: 500px;
     width: 100%;
     object-fit: cover;
@@ -190,8 +190,6 @@ article p {
     margin: 0;
 }
 
-
-
 /* RANDOM */
 #random-meal {
     box-shadow: 2px 2px 10px 0px #dad9d9;
@@ -205,20 +203,21 @@ article p {
     gap: 20px;
     border-radius: 0
 }
+
 /* MEAL country + category */
 #ctgNcountry {
     width: 100%;
     justify-content: space-around;
 }
 
-#ctgNcountry a{
+#ctgNcountry a {
     text-decoration: none;
     color: black;
 }
 
-#ctgNcountry a:hover{
+#ctgNcountry a:hover {
     text-decoration: underline;
-    
+
 }
 
 #all-meal-info {
@@ -251,19 +250,20 @@ article p {
     box-shadow: 2px 2px 10px 0px #dad9d9;
 }
 
-.ingredients-title,.recipe-title {
+.ingredients-title, .recipe-title {
     font-size: larger;
     font-weight: 500;
     text-decoration: underline;
     margin: 0;
 }
+
 /* MEAL -  */
 #ingredients {
     max-height: 100%;
     flex-direction: column;
     justify-content: start;
     flex-wrap: wrap;
-padding: 10px 0 20px 20px; 
+    padding: 10px 0 20px 20px;
     column-gap: 40px;
 }
 
@@ -287,6 +287,7 @@ padding: 10px 0 20px 20px;
 .categories-container {
     margin-top: 30px;
     width: 100vw;
+    padding: 0 20px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -324,6 +325,16 @@ padding: 10px 0 20px 20px;
     margin-bottom: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* AREAS */
+
+#container-areas {
+    height: calc(100vh - 262px);
+}
+
+#container-areas article {
+    padding: 20px;
 }
 
 /* FIRST LETTER */
@@ -388,6 +399,7 @@ padding: 10px 0 20px 20px;
     color: #dad9d9;
 
 }
+
 .country-name {
     text-decoration: none;
     color: black;
@@ -403,3 +415,40 @@ footer {
     background-color: #eeeeee;
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 910px) {
+
+    /* index */
+    #index-main-container section {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    /* FIRST LETTER */
+    .alphabet {
+        width: 80vw;
+    }
+
+    /* SEARCH */
+    #search-bar {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav a span {
+        display: none;
+    }
+
+    /* HEADER */
+    /* hide "rechercher" */
+    header {
+        padding: 10px 20px 0px 20px;
+    }
+    header a.flex_row {
+       align-items: center;
+        
+    }
+}
