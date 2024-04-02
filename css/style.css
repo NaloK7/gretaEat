@@ -89,7 +89,7 @@ body {
 
 main {
     height: inherit;
-    min-height: calc(100vh - 303px);
+    min-height: calc(100vh - 253px);
 }
 
 /* INDEX */
@@ -230,7 +230,7 @@ article p {
 
 /* MEAL -  */
 #all-meal-info img {
-    height: 400px;
+    height: 450px;
     width: 40%;
     object-fit: cover;
     border-radius: 20px;
@@ -240,7 +240,7 @@ article p {
 
 /* MEAL -  */
 #info-container {
-    height: 400px;
+    height: 450px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -341,7 +341,7 @@ article p {
 
 /* FIRST LETTER */
 .alphabet {
-    width: 40vw;
+    width: inherit;
     justify-content: space-between;
     align-items: end;
 }
