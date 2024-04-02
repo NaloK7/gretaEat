@@ -78,13 +78,13 @@ Vous arrivez dans votre nouvelle boite, et pour les besoins de celle-ci, on vous
 
 ## 500
 
-- index~~
-- categories~~
-- categorie~~
-- meal~~
-- area~~
-- first letter~~
-- random~~
-- areas~~
-- ingredient~~
-- search~~
+- ~~index~~
+- ~~categories~~
+- ~~categorie~~
+- ~~meal~~
+- ~~area~~
+- ~~first letter~~
+- ~~random~~
+- ~~areas~~
+- ~~ingredient~~
+- ~~search~~

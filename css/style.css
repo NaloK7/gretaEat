@@ -59,6 +59,7 @@ nav {
     width: 100vw;
     justify-content: center;
     gap: 130px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -83,11 +84,11 @@ nav a:hover {
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
-
+    height: inherit;
     min-height: calc(100vh - 303px);
 }
 
@@ -296,8 +297,8 @@ article p {
 /* CATEGORIES -  */
 .categories-article {
     background-color: #ffffff;
+    width: 240px;
     margin-bottom: auto;
-    /* padding: 10px; */
     border-radius: 20px;
     transition-duration: 0.2s;
 }
@@ -321,16 +322,17 @@ article p {
 /* CATEGORIE -  */
 .categorie-container h2 {
     display: ruby;
-    width: 200px;
-    margin-bottom: 10px;
+    margin: 0 20px 10px 20px;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 75%;
 }
 
 /* AREAS */
-
 #container-areas {
-    height: calc(100vh - 262px);
+    min-height: calc(100vh - 262px);
+    height: inherit;
+
 }
 
 #container-areas article {
@@ -415,21 +417,29 @@ footer {
     background-color: #eeeeee;
 }
 
+
+
 /* RESPONSIVE */
 
 @media (max-width: 910px) {
 
+    nav {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    
     /* index */
     #index-main-container section {
         width: 80vw;
         margin: 0 auto;
     }
-
+    
     /* FIRST LETTER */
     .alphabet {
         width: 80vw;
     }
-
+    
     /* SEARCH */
     #search-bar {
         width: 50vw;
@@ -438,6 +448,7 @@ footer {
 
 @media (max-width: 768px) {
 
+    /* header */
     nav a span {
         display: none;
     }
@@ -447,8 +458,88 @@ footer {
     header {
         padding: 10px 20px 0px 20px;
     }
+
     header a.flex_row {
-       align-items: center;
-        
+        align-items: center;
+
     }
+
+    /* CATEGORIES -  */
+    .categories-article {
+        width: 30%;
+
+    }
+
+    .categories-article img {
+        width: 80%;
+    }
+
+    /* MEAL */
+    #all-meal-info {
+        flex-direction: column;
+    }
+
+    /* MEAL -  */
+    #all-meal-info img {
+        width: 100%;
+
+    }
+
+    #ingredients {
+        width: 100%;
+    }
+
+    /* MEAL -  */
+    #info-container {
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    main #credits {
+        width: 80vw;
+    }
+
+    /* CATEGORIES -  */
+    .categories-article {
+        width: 45%;
+
+    }
+
+    .categories-article img {
+        width: 80%;
+    }
+
+    /* MEAL */
+    #all-meal-info {
+        flex-direction: column;
+    }
+
+    #all-meal-info img {
+        width: 100%;
+
+    }
+
+    #ingredients {
+        width: 100%;
+        gap: 0;
+        padding: 0;
+    }
+
+    #info-container {
+        width: 100%;
+        height: inherit;
+    }
+
+    /* A - Z */
+    .alphabet {
+        width: 80vw;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
 }
