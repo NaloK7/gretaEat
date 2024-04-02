@@ -6,6 +6,11 @@ document.querySelector(
 <a id="logo" href="index.html" class="flex_row"><img id="logoimg" src="img/logo2.png" alt="logo greta eat">
 <h1 id="logotxt">GretaEat</h1>
 </a>
+<input type="checkbox" id="menu-burger">
+        <label for="menu-burger">
+            <i id="open" class="fa fa-bars" aria-hidden="true"></i>
+            <i id="close" class="fas fa-times"></i>
+</label>
 <nav class="flex_row">
 <a id="all-cat-btn" href="categories.html">Categories</a>
 <a href="first-letter.html">A - Z</a>

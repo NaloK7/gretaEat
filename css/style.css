@@ -53,6 +53,17 @@ header a {
     text-align: center;
 }
 
+/* menu burger */
+
+label #close {
+    display: none;
+}
+
+header label,
+header input {
+    display: none;
+}
+
 nav {
     margin: 10px;
     padding: 0px 20px;
@@ -428,18 +439,18 @@ footer {
         gap: 20px;
         justify-content: space-evenly;
     }
-    
+
     /* index */
     #index-main-container section {
         width: 80vw;
         margin: 0 auto;
     }
-    
+
     /* FIRST LETTER */
     .alphabet {
         width: 80vw;
     }
-    
+
     /* SEARCH */
     #search-bar {
         width: 50vw;
@@ -498,7 +509,66 @@ footer {
 
 @media (max-width: 500px) {
 
+    /* header */
+    header {
+        /* parent en relative pour servir de reference au position des enfants */
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        /* cache le menu qui est "caché" a droite */
+    }
 
+    header h1 {
+        display: none
+    }
+
+    label #open,
+    label #close {
+        width: 30px;
+    }
+
+
+    header nav.flex_row {
+        margin: 0;
+        background-color: #eeeeee;
+        
+        /* position */
+        position: absolute;
+        top: 80px;
+        right: 0;
+        
+        /* size */
+        max-height: 0;
+        
+        overflow: hidden;
+        transition: ease-out 0.5s;
+    }
+    
+    
+    #menu-burger:checked~nav {
+        padding: 15px;
+        
+        /* position final */
+        right: 0px;
+        width: 100vw;
+        max-height: 90px;
+        transition: ease-out 0.5s;
+    }
+
+    #menu-burger:checked~label #close {
+        display: block;
+    }
+
+    #menu-burger:checked~label #open {
+        display: none;
+    }
+
+    header label {
+        display: flex;
+        color: black;
+    }
+
+    
     main #credits {
         width: 80vw;
     }
