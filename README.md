@@ -18,9 +18,3 @@ Vous arrivez dans votre nouvelle boite, et pour les besoins de celle-ci, on vous
 - Si besoin d'îcones, utilisez [FontAwesome](https://fontawesome.com/icons) ou [GoogleFont](https://fonts.google.com/icons) 
 - Votre site ne doit pas faire style "nineties" 
 
-## L'évaluation L'évaluation portera sur :
-
-- l'utilisation d'un HTML sémantique et adapté au référencement
-- bonnes pratiques CSS et JS - design responsive
-- la lisibilité de votre code
-
