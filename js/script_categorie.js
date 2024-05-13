@@ -1,9 +1,21 @@
-let url = document.location;
-let search = url.search;
-let param = new URLSearchParams(search);
-let c = param.get("c");
 
-async function mealsByCtg() {
+/**
+ * get category of meal in url parameters
+ * @returns {string} the categorie name
+ */
+function getCategorie() {
+  let url = document.location;
+  let search = url.search;
+  let param = new URLSearchParams(search);
+  let c = param.get("c");
+  return c
+}
+
+/**
+ * display all meals of an category, using TheMealDB API
+ * @param {string} c a name of meal categorie
+ */
+async function mealsByCtg(c) {
   // get all meals request
   let gamr = await fetch(
     `https://www.themealdb.com/api/json/v1/1/filter.php?c=${c}`
@@ -32,4 +44,4 @@ async function mealsByCtg() {
   }
 }
 
-mealsByCtg();
+mealsByCtg(getCategorie())

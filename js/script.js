@@ -19,7 +19,7 @@ document.querySelector(
 </nav>`;
 
 
-// logo animation
+// logo path for animation
 let logoPaths = [
   "img/logo1.png",
   "img/logo2.png",
@@ -28,8 +28,11 @@ let logoPaths = [
   "img/logo5.png",
   "img/logo6.png",
 ];
-
-function incrementCounter() {
+/**
+ * increment logo number path using localStorage: counter
+ * @return { integer }
+ */
+function changeLogo() {
   let counter = localStorage.getItem("counter");
   counter = counter ? parseInt(counter) + 1 : 1;
   localStorage.setItem("counter", counter);
@@ -38,7 +41,7 @@ function incrementCounter() {
   return counter;
 }
 
-incrementCounter();
+changeLogo();
 
 // FOOTER
 let footer = document.querySelector('footer')
