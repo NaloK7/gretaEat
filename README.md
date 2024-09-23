@@ -1,4 +1,5 @@
-# ECF | Front-End ## Contexte:
+# Premier Projet Web | Front-End
+## Contexte:
 
 Vous arrivez dans votre nouvelle boite, et pour les besoins de celle-ci, on vous demande de maquetter puis de coder un site permettant de pouvoir proposer des idées de repas à une famille sur une semaine. En somme, un "Suggestionneur de Repas", en utilisant l'API suivante : [TheMealDB](https://www.themealdb.com)
 
